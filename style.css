@@ -314,6 +314,7 @@ body{
   font-size:clamp(.6rem,1.2vw,.8rem);letter-spacing:.42em;
   margin-top:1rem;color:rgba(232,228,220,.7);
 }
+.aura-accent{color:var(--blood-hot);text-shadow:0 0 34px rgba(255,43,43,.35)}
 
 /* ═══════════ ACT II — EYES ═══════════ */
 .eyes{height:260vh;position:relative;background:#000}
@@ -581,13 +582,30 @@ footer{
   -webkit-background-clip:text;background-clip:text;color:transparent;
   text-align:center;
 }
+.footer__big span{color:var(--blood-hot)}
+.footer__intro{
+  text-align:center;margin-top:1.4rem;
+  font-family:var(--serif);font-size:clamp(.9rem,1.6vw,1.1rem);
+  letter-spacing:.18em;color:rgba(232,228,220,.6);
+}
 .footer__row{
   display:flex;flex-wrap:wrap;gap:1.2rem;
   justify-content:space-between;margin-top:3rem;
   font-family:var(--mono);font-size:.58rem;letter-spacing:.3em;
   color:var(--smoke);
 }
-.footer__row span:last-child{font-family:var(--serif);letter-spacing:.24em}
+.footer__links{display:flex;flex-wrap:wrap;gap:1.6rem}
+.footer__links a{color:var(--bone);text-decoration:none;transition:color .3s ease}
+.footer__links a:hover{color:var(--blood-hot)}
+.footer__base{
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  margin-top:1.4rem;padding-top:1.2rem;
+  border-top:1px solid rgba(232,228,220,.08);
+  font-family:var(--mono);font-size:.52rem;letter-spacing:.24em;
+  color:rgba(232,228,220,.34);
+}
+.footer__base a{color:rgba(232,228,220,.52);text-decoration:none;transition:color .3s ease}
+.footer__base a:hover{color:var(--blood-hot)}
 
 /* scroll-driven parallax + fade (JS owns transform/opacity) */
 [data-px],.jutsu__grid .card{will-change:transform,opacity}
